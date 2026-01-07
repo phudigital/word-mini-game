@@ -1,10 +1,10 @@
 # 🎮 Bé Học Tiếng Anh
 
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://html.spec.whatwg.org/)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://www.w3.org/Style/CSS/Overview.en.html)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![p5.js](https://img.shields.io/badge/p5.js-ED225D?style=for-the-badge&logo=p5.js&logoColor=white)](https://github.com/processing/p5.js)
-[![Phú Digital](https://img.shields.io/badge/Phú_Digital-FF5252?style=for-the-badge)](https://phudigital.com)
+<a href="https://html.spec.whatwg.org/" target="_blank"><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5"></a>
+<a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank"><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3"></a>
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript"></a>
+<a href="https://github.com/processing/p5.js" target="_blank"><img src="https://img.shields.io/badge/p5.js-ED225D?style=for-the-badge&logo=p5.js&logoColor=white" alt="p5.js"></a>
+<a href="https://phudigital.com" target="_blank"><img src="https://img.shields.io/badge/Phú_Digital-FF5252?style=for-the-badge" alt="Phú Digital"></a>
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 > Game học tiếng Anh tương tác cho trẻ em với hình ảnh sinh động và phát âm chuẩn
@@ -98,7 +98,7 @@ MIT License - Tự do sử dụng cho mục đích giáo dục
 
 ## 👨‍💻 Tác Giả
 
-Phát triển bởi [Phú Digital](https://phudigital.com) - [Công Ty TNHH Giải Pháp PDL](https://pdl.vn)
+Phát triển bởi <a href="https://phudigital.com" target="_blank">Phú Digital</a> - <a href="https://pdl.vn" target="_blank">Công Ty TNHH Giải Pháp PDL</a>
 
 ---
 
