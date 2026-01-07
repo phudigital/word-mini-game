@@ -3,7 +3,8 @@
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![p5.js](https://img.shields.io/badge/p5.js-ED225D?style=for-the-badge&logo=p5.js&logoColor=white)
+[![p5.js](https://img.shields.io/badge/p5.js-ED225D?style=for-the-badge&logo=p5.js&logoColor=white)](https://github.com/processing/p5.js)
+[![Phú Digital](https://img.shields.io/badge/Phú_Digital-FF5252?style=for-the-badge)](https://phudigital.com)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 > Game học tiếng Anh tương tác cho trẻ em với hình ảnh sinh động và phát âm chuẩn
