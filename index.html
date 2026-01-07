@@ -3,7 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+
+    <!-- iOS Fullscreen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="mobile-web-app-capable" content="yes">
+
     <title>Bé Học Tiếng Anh - Game Học Tiếng Anh Tương Tác Cho Trẻ Em</title>
 
     <!-- SEO Meta Tags -->
@@ -30,7 +37,12 @@
         content="Game học tiếng Anh tương tác dành cho trẻ em với hình ảnh sinh động và phát âm chuẩn.">
     <meta property="twitter:image" content="screenshot.jpg">
 
-    <link rel="stylesheet" href="style.css">
+    <!-- Version for cache busting -->
+    <script>
+        const APP_VERSION = '1.0.0';
+    </script>
+
+    <link rel="stylesheet" href="style.css?v=1.0.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
 </head>
@@ -38,7 +50,7 @@
 <body>
     <h1 style="display: none;">Bé Học Tiếng Anh - Game Giáo Dục Tương Tác</h1>
     <div id="game-container"></div>
-    <script src="sketch.js"></script>
+    <script src="sketch.js?v=1.0.0"></script>
 </body>
 
 </html>

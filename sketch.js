@@ -171,8 +171,15 @@ function drawHome() {
 let isTransitioning = false;
 let feedbackText = "";
 let feedbackColor = "#4CAF50";
+let audioUnlocked = false;
 
 function startGame() {
+  // Unlock audio on first user interaction (critical for mobile/Zalo)
+  if (!audioUnlocked) {
+    unlockAudio();
+    audioUnlocked = true;
+  }
+
   score = 0;
   lives = CONFIG.TOTAL_LIVES;
   gameState = "PLAYING";
@@ -432,6 +439,17 @@ function endGame() {
   gameState = "GAMEOVER";
 }
 
+function unlockAudio() {
+  // Unlock audio context for mobile browsers (iOS, Android, Zalo)
+  if ("speechSynthesis" in window) {
+    // Try to speak empty text to unlock
+    const utterance = new SpeechSynthesisUtterance("");
+    utterance.volume = 0;
+    window.speechSynthesis.speak(utterance);
+    console.log("Audio unlocked for mobile");
+  }
+}
+
 function playTTS(text, lang) {
   if ("speechSynthesis" in window) {
     // Cancel any ongoing speech
@@ -442,15 +460,19 @@ function playTTS(text, lang) {
     utterance.rate = 0.9;
     utterance.volume = 1.0;
 
-    utterance.onstart = () => {
-      console.log(`Playing TTS: "${text}" in ${lang}`);
-    };
+    // Add small delay for better compatibility with Zalo browser
+    setTimeout(() => {
+      utterance.onstart = () => {
+        console.log(`Playing TTS: "${text}" in ${lang}`);
+      };
 
-    utterance.onerror = (e) => {
-      console.error("TTS Playback failed:", e);
-    };
+      utterance.onerror = (e) => {
+        console.error("TTS Playback failed:", e);
+      };
 
-    window.speechSynthesis.speak(utterance);
+      window.speechSynthesis.speak(utterance);
+    }, 50);
+
     return utterance;
   } else {
     console.error("Speech Synthesis not supported in this browser");
